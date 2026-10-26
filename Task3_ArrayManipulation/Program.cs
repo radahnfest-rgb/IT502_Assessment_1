@@ -36,6 +36,18 @@ class Program
         }
 
         // ----- Display the new values -----
-        Console.WriteLine("The new array values are :" + string.Join(", ", numbers));
+        Console.Write("The new array values are :");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.Write(numbers[i]);
+
+    if (i < numbers.Length - 1)
+    {
+        Console.Write(", ");
+    }
+}
+
+Console.WriteLine();
     }
 }
